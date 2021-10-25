@@ -1,6 +1,6 @@
 ## Aesthetic Academic CV
 
-This is a really nice looking CV that I modified heavily from a popular CV template that's floating on the web. Try finding out what it is :P (hint : yahoo).
+This is a really nice looking CV that I modified heavily from a popular CV template that's floating on the web. 
 
 The template is also heavily space efficient, but still looks vastly better than most CV's out there. It's perfectly usable for any kind of opportunity, be it academic or industrial.
 
