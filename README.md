@@ -15,3 +15,10 @@ Leave a star if you like it :)
 
 1. Download the entire repository as a zip file, and upload on overleaf.
 2. Modify relevant sections under the `sections/` folder, and enjoy!
+
+
+(or)
+
+1. View this link : https://www.overleaf.com/read/nvzbtynxtwcf
+
+2. Copy the project, and enjoy!
