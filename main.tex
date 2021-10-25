@@ -1,0 +1,140 @@
+\documentclass[a4paper,11pt]{template}
+%-----------------------------------------------------------
+\usepackage[]{geometry}
+% top=0.55in, left=0.55in, right=0.85in
+% \geometry{
+%   top=0.55in,
+%   bottom=0.15in,
+%   left=0.55in,
+%   right=0.85in,
+%   includeheadfoot,
+%   headsep=0mm,
+%   footskip=0mm
+% }
+
+%%%% MINE
+\geometry{
+  top=0.3in,
+  bottom=0.25in,
+  left=0.35in,
+  right=0.35in,
+includeheadfoot,
+  nofoot,
+  nohead,
+     headsep=0mm
+%   ,showframe
+  }
+  
+  
+%   %%% CDS
+%   \geometry{
+%   top=0.55in,
+% %   bottom=0.1in,
+%   left=0.55in,
+%   right=0.85in,
+% includeheadfoot,
+%   nofoot,
+%   nohead,
+%      headsep=0mm
+% %   ,showframe
+%   }
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{hyperref}
+
+
+\usepackage{palatino}
+\usepackage{booktabs}
+
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Lato}
+\else
+  % If using pdflatex:
+  \usepackage[default]{lato}
+\fi
+\usepackage{fontawesome}
+
+\usepackage{xcolor}
+\fontfamily{SansSerif}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+\usepackage[T1]{fontenc}
+\usepackage
+%[ansinew]
+[utf8]
+{inputenc}
+
+\usepackage{color}
+\definecolor{boxbg}{rgb}{0.93,0.94,1}
+
+\raggedbottom
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+
+\pagestyle{plain}
+\textheight=11.2in
+
+% Change the colours if you want to
+\definecolor{VividPurple}{HTML}{3E0097}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+% \colorlet{name}{black}
+\colorlet{tagline}{VividPurple}
+\colorlet{heading}{VividPurple}
+\colorlet{headingrule}{VividPurple}
+% \colorlet{subheading}{PastelRed}
+\colorlet{accent}{VividPurple}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+\definecolor{main}{rgb}{0.0,0.05,0.05}
+\definecolor{primary}{rgb}{0.0,0.16,0.27}
+
+\AtBeginDocument{\globalcolor{main}}
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\headingnote}[1]{{\normalfont \footnotesize \textit{ #1}}}
+\newcommand{\resheading}[1]{{ \colorbox{boxbg}{\begin{minipage}{0.96\textwidth}{\textcolor{primary}{\textbf{#1 \vphantom{p\^{E}}}}}\end{minipage}}}}
+\DeclareTextCommandDefault{\textregistered}{\textcircled{%
+      \check@mathfonts\fontsize\sf@size\z@\math@fontsfalse\selectfont R}}
+
+\usepackage{textcomp}
+
+
+
+\begin{document}
+\name{John Doe}
+\tagline{Biological Computation Engineering | Neuroscience | University of Antarctica}
+\personalinfo{
+    \email{humans@india.com}
+    \linkedin{myLinkedinRocks}
+    \github{github.com/myGithub}
+    \homepage{myGithub.github.io}
+}
+\makecvheader
+
+
+\input{sections/education}
+\input{sections/achievements.tex}
+\input{sections/publications}
+
+\input{sections/internships}
+\input{sections/researchProjects}
+
+\input{sections/skills.tex}
+
+\input{sections/extracurrics.tex}
+
+
+
+\end{document}
