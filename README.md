@@ -1,4 +1,4 @@
-## Aesthetic Academic CV
+## Aesthetic Resume Template
 
 This is a really nice looking CV that I modified heavily from a popular CV template that's floating on the web. 
 
